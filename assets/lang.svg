@@ -1,28 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 108" width="820" height="108" role="img" aria-label="Public code volume by language: TypeScript 51.9%, Rust 42.3%, Python 2.7%, CSS 1.2%, Shell 0.8%, PowerShell 0.7%, other 0.3%.">
   <defs>
     <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070c16"/>
-      <stop offset="1" stop-color="#0a1120"/>
+      <stop id="c1" offset="0"/>
+      <stop id="c2" offset="1"/>
     </linearGradient>
+    <style>
+      :root {
+        --bg0: #0a0f14; --bg1: #101a22; --line: #1c2a33;
+        --tx: #e6f1f5; --dim: #6b8391; --acc: #35d0c0;
+        --s1: #35d0c0; --s2: #2cb9ad; --s3: #239e96; --s4: #1a8380;
+        --s5: #146969; --s6: #0f5052; --s7: #0a3a3e;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg0: #ffffff; --bg1: #f2f5f7; --line: #d6dde3;
+          --tx: #1f2328; --dim: #6e7d88; --acc: #0b7c72;
+          --s1: #0b7c72; --s2: #17767c; --s3: #246f7f; --s4: #31687a;
+          --s5: #3d6072; --s6: #485868; --s7: #525060;
+        }
+      }
+      text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      #c1 { stop-color: var(--bg0); } #c2 { stop-color: var(--bg1); }
+      .frame { fill: url(#cbg); stroke: var(--line); }
+      .cap { font-size: 11.5px; letter-spacing: 2.2px; fill: var(--dim); }
+      .lg  { font-size: 11px; fill: var(--tx); }
+      .lgs { font-size: 11px; fill: var(--dim); }
+      .b1 { fill: var(--s1); } .b2 { fill: var(--s2); } .b3 { fill: var(--s3); }
+      .b4 { fill: var(--s4); } .b5 { fill: var(--s5); } .b6 { fill: var(--s6); }
+      .b7 { fill: var(--s7); }
+    </style>
   </defs>
-  <rect width="820" height="108" rx="12" fill="url(#cbg)" stroke="#1e2b3d"/>
-  <text x="28" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" letter-spacing="2.2" fill="#4d6076">// PUBLIC CODE VOLUME · BYTES BY LANGUAGE · 2026-09-19</text>
+
+  <rect class="frame" width="820" height="108" rx="12"/>
+  <text class="cap" x="28" y="32">// PUBLIC CODE VOLUME &#183; BYTES BY LANGUAGE &#183; 2026-09-19</text>
 
   <g transform="translate(28 46)">
-    <rect x="0"     width="394" height="16" rx="3" fill="#3178c6"/>
-    <rect x="395"   width="321" height="16" rx="3" fill="#dea584"/>
-    <rect x="717"   width="21"  height="16" rx="3" fill="#3572a5"/>
-    <rect x="739"   width="9"   height="16" fill="#663399"/>
-    <rect x="749"   width="7"   height="16" fill="#89e051"/>
-    <rect x="757"   width="5"   height="16" fill="#012456"/>
-    <rect x="763"   width="1"   height="16" fill="#f1e05a"/>
-    <rect x="765"   width="1"   height="16" fill="#e34c26"/>
-    <text x="0" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#cbe6ff">TypeScript 51.9%</text>
-    <text x="152" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#cbe6ff">Rust 42.3%</text>
-    <text x="262" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#6f8299">Python 2.7%</text>
-    <text x="372" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#6f8299">CSS 1.2%</text>
-    <text x="448" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#6f8299">Shell 0.8%</text>
-    <text x="540" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#6f8299">PowerShell 0.7%</text>
-    <text x="668" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#4d6076">other 0.3%</text>
+    <rect class="b1" x="0"   width="394" height="16" rx="3"/>
+    <rect class="b2" x="395" width="321" height="16" rx="3"/>
+    <rect class="b3" x="717" width="21"  height="16" rx="3"/>
+    <rect class="b4" x="739" width="9"   height="16"/>
+    <rect class="b5" x="749" width="7"   height="16"/>
+    <rect class="b6" x="757" width="5"   height="16"/>
+    <rect class="b7" x="763" width="1"   height="16"/>
+    <rect class="b7" x="765" width="1"   height="16"/>
+
+    <text class="lg"  x="0"   y="34">TypeScript 51.9%</text>
+    <text class="lg"  x="152" y="34">Rust 42.3%</text>
+    <text class="lgs" x="262" y="34">Python 2.7%</text>
+    <text class="lgs" x="372" y="34">CSS 1.2%</text>
+    <text class="lgs" x="448" y="34">Shell 0.8%</text>
+    <text class="lgs" x="540" y="34">PowerShell 0.7%</text>
+    <text class="lgs" x="668" y="34">other 0.3%</text>
   </g>
 </svg>
