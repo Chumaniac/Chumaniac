@@ -62,7 +62,7 @@ other harnesses (~5.9k stars). LoopX runs an itemized contributor task board
 Snapshot as of **2026-09-19**, straight from the GitHub API — no estimator in the loop.
 
 ```text
-repos (public) ......... 3        commits (default branch) ... 275
+repos (public) ......... 4        commits (default branch) ... 275
 PRs opened ............. 15       PRs merged ................. 15  (100%)
 releases ............... SkillTape v0.1.0 · SkillSync v0.1.2
 targets shipped ........ linux-gnu · apple-darwin (x86_64 + aarch64) · windows-msvc
