@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 64" width="880" height="64" role="img" aria-label="Status strip: capture, compile, verify pipeline active; stack readout rust, typescript, bubblewrap, sandbox-exec, fail-closed receipts.">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#070c16"/>
+      <stop offset="1" stop-color="#0b1524"/>
+    </linearGradient>
+    <style>
+      text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .lbl { font-size: 11px; letter-spacing: 1.8px; fill: #6f8299; }
+      .val { font-size: 11px; letter-spacing: 1.2px; fill: #9fe8ff; }
+      .dot { animation: blip 1.8s ease-in-out infinite; }
+      @keyframes blip { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+      .b { transform-origin: bottom; animation: eq 1.6s ease-in-out infinite; fill: #22d3ee; }
+      .b2 { animation-duration: 1.15s; animation-delay: -.35s; fill: #5eead4; }
+      .b3 { animation-duration: 2.05s; animation-delay: -.8s;  fill: #a5b4fc; }
+      .b4 { animation-duration: 1.45s; animation-delay: -.55s; fill: #38bdf8; }
+      @keyframes eq { 0%,100% { transform: scaleY(.25); } 50% { transform: scaleY(1); } }
+      .sweep { animation: sw 5.5s linear infinite; }
+      @keyframes sw { 0% { transform: translateX(0); opacity: 0; } 8% { opacity: .9; } 92% { opacity: .9; } 100% { transform: translateX(828px); opacity: 0; } }
+    </style>
+  </defs>
+
+  <rect width="880" height="64" rx="10" fill="url(#hbg)" stroke="#1e2b3d"/>
+
+  <circle class="dot" cx="24" cy="32" r="4.5" fill="#5eead4"/>
+  <text class="val" x="38" y="36">PIPELINE ACTIVE</text>
+
+  <g transform="translate(196 20)">
+    <rect class="b"     x="0"  y="0" width="4" height="24" rx="2"/>
+    <rect class="b b2"  x="8"  y="0" width="4" height="24" rx="2"/>
+    <rect class="b b3"  x="16" y="0" width="4" height="24" rx="2"/>
+    <rect class="b b4"  x="24" y="0" width="4" height="24" rx="2"/>
+    <rect class="b b2"  x="32" y="0" width="4" height="24" rx="2"/>
+  </g>
+
+  <text class="lbl" x="268" y="27">STACK</text>
+  <text class="val" x="268" y="45">rust &#183; typescript &#183; bwrap &#183; sandbox-exec</text>
+
+  <text class="lbl" x="596" y="27">POLICY</text>
+  <text class="val" x="596" y="45">fail-closed &#183; offline &#183; no keys</text>
+
+  <text class="lbl" x="790" y="27">TRACE</text>
+  <text class="val" x="790" y="45">sha256</text>
+
+  <rect class="sweep" x="26" y="56" width="52" height="2" rx="1" fill="#22d3ee"/>
+</svg>
