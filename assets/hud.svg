@@ -39,8 +39,5 @@
   <text class="lbl" x="596" y="27">POLICY</text>
   <text class="val" x="596" y="45">fail-closed &#183; offline &#183; no keys</text>
 
-  <text class="lbl" x="790" y="27">TRACE</text>
-  <text class="val" x="790" y="45">sha256</text>
-
   <rect class="sweep" x="26" y="56" width="52" height="2" rx="1" fill="#22d3ee"/>
 </svg>
