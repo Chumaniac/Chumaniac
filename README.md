@@ -1,30 +1,15 @@
-<div align="center">
+# Chumaniac
 
-<img src="assets/banner.svg" alt="Chumaniac — capture, compile, verify. Local-first tooling for the agent skill supply chain." width="100%">
-<img src="assets/hud.svg" alt="Pipeline active. Stack: rust, typescript, bwrap, sandbox-exec. Policy: fail-closed, offline, no keys." width="100%">
+我做可以在本机使用的工具。下面的浏览器版本可以直接试用，源码、安装说明与支持范围见各自仓库。
 
-</div>
+| 项目 | 用途 | 入口 |
+| --- | --- | --- |
+| [SkillTape](https://github.com/Chumaniac/skilltape) | 记录命令、核对输入与结果。 | [在线试用](https://chumaniac.github.io/skilltape/) |
+| [SkillSync](https://github.com/Chumaniac/skillsync) | 检查 Skill 文档、来源与交付物。 | [在线试用](https://chumaniac.github.io/skillsync/) |
+| [墨评 Inkwise](https://github.com/Chumaniac/inkwise-app) | 按原文和量规复核作文。 | [在线试用](https://chumaniac.github.io/inkwise-app/) |
+| [澜知海洋](https://github.com/Chumaniac/marine-fisheries-app) | 查看观测曲线、网络模式与批次状态。 | [在线试用](https://chumaniac.github.io/marine-fisheries-app/) |
+| [Haptic Bridge](https://github.com/Chumaniac/haptic-bridge-app) | 编排触觉模式，预览强度和时长。 | [在线试用](https://chumaniac.github.io/haptic-bridge-app/) |
+| [Ordarc](https://github.com/Chumaniac/ordarc-experience-shell) | 保存和回看研习记录。 | [在线试用](https://chumaniac.github.io/ordarc-experience-shell/) |
+| [Chumanic Journal](https://github.com/Chumaniac/chumanic-blog-app) | 检索阅读样例，保存上次阅读位置。 | [在线试用](https://chumaniac.github.io/chumanic-blog-app/) |
 
-```console
-$ whoami --verbose
-  capture → compile → verify · the boring layer of the agent supply chain
-  a skill you can't replay in a box and explain in a diff is just folklore
-
-$ ls ~/projects
-  skilltape   rust        capture a command → reviewable Skill → sandboxed replay → Receipt
-  skillsync   typescript  offline provenance / compatibility / drift · never executes the skill
-```
-
-[![SkillTape](https://img.shields.io/badge/SkillTape-v0.1.0-DEA584?style=flat-square&logo=rust&logoColor=1a1206)](https://github.com/Chumaniac/skilltape)
-[![CI](https://img.shields.io/github/actions/workflow/status/Chumaniac/skilltape/ci.yml?style=flat-square&label=CI&logo=githubactions&logoColor=white)](https://github.com/Chumaniac/skilltape/actions/workflows/ci.yml)
-[![10 crates](https://img.shields.io/badge/crates-10-0b1220?style=flat-square)](https://github.com/Chumaniac/skilltape/tree/main/crates)
-[![SkillSync](https://img.shields.io/npm/v/%40chumanic%2Fskillsync?style=flat-square&label=SkillSync%40npm&color=3178c6)](https://github.com/Chumaniac/skillsync)
-[![LoopX](https://img.shields.io/badge/upstream-LoopX_--_4659_%C2%B7_4657_merged-5eead4?style=flat-square)](https://github.com/huangruiteng/loopx/pulls?q=is%3Apr+author%3AChumaniac)
-
-```console
-$ telemetry --public
-  repos 4 · PRs 15 opened / 15 merged · commits 275 · releases v0.1.0 + v0.1.2
-  targets linux-gnu · darwin x86_64/aarch64 · windows-msvc · gates CodeQL + Dependabot
-```
-
-<img src="assets/lang.svg" alt="Language distribution by bytes: TypeScript 51.9%, Rust 42.3%, Python 2.7%, CSS 1.2%, Shell 0.8%, PowerShell 0.7%, other 0.3%." width="100%">
+[Ordarc 命盘与研习正式站](https://chumanic.com/)
